@@ -40,7 +40,7 @@ public class MaxThread extends Thread {
 		MaxThread[] ts = new MaxThread[4];
 		for (int i = 0; i < 4; i++) {
 			ts[i] = new MaxThread(arr, (i * len) / 4, ((i + 1) * len / 4));
-			ts[i].start(); // starts run() for each thread
+			ts[i].start(); // starts run() for each thread (run() is like main for the thread)
 		}
 
 		// Wait for the threads to finish and getMax their results.
